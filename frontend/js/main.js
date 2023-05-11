@@ -6,8 +6,7 @@ window.onload = async () => {
 
   // Aqui debemos agregar nuestro fetch
   const peliculas = await fetch("http://localhost:3031/api/movies")
-    .then(res => res.json());
-
+    .then(res => res.json())    
 
   /** Codigo que debemos usar para mostrar los datos en el frontend*/
   let data = peliculas.data;
